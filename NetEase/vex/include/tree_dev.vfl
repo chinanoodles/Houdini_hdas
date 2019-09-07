@@ -1,0 +1,14 @@
+vector I(float theta_de,phi_de){
+float x,y,z;
+vector result;
+float theta_rad = radians(theta_de);
+float phi_rad = radians(phi_de);
+x = sin(theta_rad)*cos(phi_rad);
+y = sin(theta_rad)*sin(phi_rad);
+z = cos(theta_rad);
+result.x=x;
+result.y=y;
+result.z=z;
+//printf("tst%d",result.z);
+return result;
+}

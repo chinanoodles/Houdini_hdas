@@ -1,0 +1,14 @@
+vector A = point(0,"P",0);
+vector B = point(0,"P",1);
+vector C = point(0,"P",2);
+
+vector new_pos;
+
+for(float i=0.0;i<=1;i+=0.1){
+    for(float j=0.0;j<=1.01-i;j+=0.1){
+    new_pos = i *A +j*B + (1.0-(i+j))*C;
+    addpoint(0,new_pos);
+
+    }
+
+}
